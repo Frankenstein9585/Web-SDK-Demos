@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your loan now!</title>
+    <link rel="icon" href="https://docs.lendsqr.com/wp-content/uploads/2025/04/Vector.png" type="image/png">
+    <script src="https://lex.lendsqr.com/pontis/dist/embed.min.js"></script>
+    <script>
+        function borrow() {
+            var handler = LSQWidget.setup({
+                key: "pk_live_ZONO7Zx65J8wLytvOr9t1u0YWQSQhjKjxmg0Zug6",
+                product_id: "62343fe688d3b70314b5c1730328a936",
+                theme: {
+                    modal: {
+                        width: "100vw",
+                        height: "100vh"
+                    }
+                }
+            });
+            handler.borrow();
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top right, #379f97, #379f97);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 2.5rem;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.125rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: #379f97;
+            color: #fff;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #136bb3;
+        }
+
+        .lsq-widget-modal-content {
+            max-width: 1000px;
+        }
+
+       .helper-modal {
+            width: 100vw !important;
+            height: 100vh !important;
+       }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Get the Loan You Need!</h1>
+    <p>Access flexible and reliable loan options to meet your personal or business needs. Apply today and repay at a pace that works for you.</p>
+    <button class="btn" onclick="borrow()">Apply for a Loan</button>
+</div>
+</body>
+</html>

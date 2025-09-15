@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Loan Page</title>
+    <link rel="icon" href="https://docs.lendsqr.com/wp-content/uploads/2025/04/Vector.png" type="image/png">
+    <script src="https://lex.lendsqr.com/pontis/dist/embed.min.js"></script>
+    <script>
+        function borrow() {
+            var handler = LSQWidget.setup({
+                key: "pk_live_ZONO7Zx65J8wLytvOr9t1u0YWQSQhjKjxmg0Zug6",
+                product_id: "d24fb9e15b6e0464c336856ec4c69cc0",
+            });
+            handler.borrow();
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #facc15, #f97316);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 2.5rem;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.125rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: #f59e0b;
+            color: #fff;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #d97706;
+        }
+
+        .lsq-widget-modal-content {
+            max-width: 1000px;
+            padding: 0;
+        }
+
+        .helper-modal {
+            max-width: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Go Solar with Ease</h1>
+    <p>Switch to clean and reliable energy with our flexible solar loan plans. Power your home or business with solar panels and inverters, and pay at your own pace.</p>
+    <button class="btn" onclick="borrow()">Apply for a Solar Loan</button>
+</div>
+</body>
+</html>
